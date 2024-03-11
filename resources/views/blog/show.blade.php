@@ -3,9 +3,13 @@
 @section('content')
 <div class="w-4/5 m-auto text-left">
     <div class="py-15">
+        <div>
+            <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+        </div>
         <h1 class="text-6xl">
             {{ $post->title }}
         </h1>
+
     </div>
 </div>
 

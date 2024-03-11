@@ -55,6 +55,7 @@ class PostsController extends Controller
         Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
+            'info' => $request->input('info'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id
@@ -106,6 +107,7 @@ class PostsController extends Controller
             ->update([
                 'title' => $request->input('title'),
                 'description' => $request->input('description'),
+                'info' => $request->input('info'),
                 'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
                 'user_id' => auth()->user()->id
             ]);
