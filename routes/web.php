@@ -24,7 +24,13 @@ Auth::routes();
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+Route::get('/contact_us',[\App\Http\Controllers\ContactController::class,'contact']);
+
+Route::post('/send_message',[\App\Http\Controllers\ContactController::class,'sendEmail'])->name('contact.send');
+
+
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('comments/{post_id}', [\App\Http\Controllers\CommentController::class, 'store'])->name('comments.store');
+
