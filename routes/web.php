@@ -28,6 +28,8 @@ Route::get('/contact_us',[\App\Http\Controllers\ContactController::class,'contac
 
 Route::post('/send_message',[\App\Http\Controllers\ContactController::class,'sendEmail'])->name('contact.send');
 
+Route::get('/about',[\App\Http\Controllers\AboutController::class,'about']);
+
 
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
