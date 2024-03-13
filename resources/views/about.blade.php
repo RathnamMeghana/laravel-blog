@@ -6,14 +6,11 @@
 
  
     <div id="profile"
-    class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-black mx-6 lg:mx-0" style="opacity: 0.9;">
+    class="w-full bg-black mx-6 lg:mx-0" style="width: 40%; opacity: 0.9; margin-left:90px">
 
 
         <div class="p-4 md:p-12 text-center lg:text-left">
           
-            <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                style="background-image: 'https://source.unsplash.com/MP0IUfwrn0A')"></div>
-
             <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-white">Meghana Rathnam</h1>
             <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
             <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start text-white">
@@ -103,9 +100,9 @@
         </div>
 
       
-        <div class="w-full lg:w-2/5">
+        <div class="w-full lg:w-2/5" style="margin-left:180px">
            
-            <img src="../images/woman.png" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+            <img src="../images/woman.png" class="hidden lg:block">
           
 
         </div>
