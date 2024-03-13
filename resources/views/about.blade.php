@@ -2,11 +2,11 @@
 
 @section('content')
  
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/cinema-elements-red-background-with-copy-space_23-2148457853.jpg?t=st=1710270954~exp=1710274554~hmac=3d455180eb51c204f8d23b8ed218fe9c0acc9ada59278952a7f9b046954d9471&w=1800');">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-vector/realistic-red-theatrical-closed-curtain-shiny-material-with-reflection-stage-floor-vector-illustration_1284-33550.jpg?t=st=1710360609~exp=1710364209~hmac=c2a171dc598d8b507a6bdfdf4ebf00fbcb7cc0e4d6abbace7c0a0eb840c2e84d&w=1060');">
 
  
     <div id="profile"
-    class="w-full bg-black mx-6 lg:mx-0" style="width: 40%; opacity: 0.9; margin-left:90px">
+    class="bg-black mx-6 lg:mx-0" style="width: 55%; opacity: 0.9; margin-left:20px">
 
 
         <div class="p-4 md:p-12 text-center lg:text-left">
@@ -100,7 +100,7 @@
         </div>
 
       
-        <div class="w-full lg:w-2/5" style="margin-left:180px">
+        <div class="lg:w-2/5" style="margin-left:0px;width:40%;">
            
             <img src="../images/woman.png" class="hidden lg:block">
           

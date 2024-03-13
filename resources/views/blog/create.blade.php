@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710336788~exp=1710340388~hmac=42a1841d73606251c5efb0051293550b5dcb8095af7eda4a7ba2afa43098d08d&w=1800');">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710358328~exp=1710361928~hmac=843c006e13eb7a8a8a03c395af7bc2d13cc42d406526680b6a7d300f5a64ac9d&w=1800'); background-size: cover; background-position: center center;">
 
     <div class="w-full lg:w-3/5 p-4 md:p-8 lg:order-1 order-2">
         <div class="bg-black rounded-lg p-4 md:p-8" style="opacity: 0.9;">
@@ -45,9 +45,6 @@
         </form>
     </div>
 </div>
-<div class="w-full lg:w-2/5 p-4 md:p-8 lg:order-2 order-1">
-        <img src="../images/film.png" alt="Film" class="rounded-lg  hidden lg:block">
-    </div>
-</div>
+
 
 @endsection
