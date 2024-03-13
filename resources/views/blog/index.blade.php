@@ -21,7 +21,7 @@
 
 @if (Auth::check())
 <div class="w-4/5 mx-auto mb-10">
-    <a href="/blog/create" class="bg-black hover:bg-red-700 uppercase text-white text-xs font-extrabold py-3 px-5 rounded-3xl">
+    <a href="/blog/create" class="bg-black hover:bg-gray-200 hover:text-black uppercase text-white text-xs font-extrabold py-3 px-5 rounded-3xl">
         Create post
     </a>
 </div>
