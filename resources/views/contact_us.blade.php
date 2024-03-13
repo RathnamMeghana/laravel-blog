@@ -1,43 +1,55 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-4xl mx-auto my-10 px-4">
-    <section>
-        @if(Session::has('message_sent'))
-            <div class="p-4 mb-5 bg-green-100 text-green-800 rounded">
-                {{ Session::get('message_sent') }}
-            </div>
-        @endif
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710336788~exp=1710340388~hmac=42a1841d73606251c5efb0051293550b5dcb8095af7eda4a7ba2afa43098d08d&w=1800'); background-size: cover; background-position: center center;">
+    <div class="w-full lg:w-1/2 mx-auto bg-black rounded-lg shadow-xl" style="opacity: 0.9;">
+        <div class="p-4 md:p-8 text-center lg:text-left">
+            <h1 class="text-3xl font-bold text-white">Contact Us</h1>
 
-        <form method="POST" action="{{ route('contact.send') }}" enctype="multipart/form-data" class="space-y-6 bg-white p-6 rounded shadow">
-            @csrf
-            <div>
-                <input type="text" name="name" placeholder="Name" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                @error('name')
-                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                @enderror
-            </div>
-            <div>
-                <input type="email" name="email" placeholder="Email address" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                @error('email')
-                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                @enderror
-            </div>
-            <div>
-                <input type="tel" name="phone" placeholder="Phone" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                @error('phone')
-                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                @enderror
-            </div>
-            <div>
-                <textarea name="msg" placeholder="Message" rows="3" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                @error('msg')
-                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                @enderror
-            </div>
-            
-            <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none focus:bg-blue-700">Send</button>
-        </form>
-    </section>
+            @if(Session::has('message_sent'))
+                <div class="mt-4 bg-green-500 text-white font-bold py-2 px-4 rounded">
+                    {{ Session::get('message_sent') }}
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('contact.send') }}" enctype="multipart/form-data" class="mt-6">
+                @csrf
+                
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full bg-gray-800 text-white rounded border border-gray-600 leading-tight focus:outline-none focus:bg-gray-700 p-4" style="height: 50px;">
+                    @error('name')
+                        <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Your Email" class="w-full bg-gray-800 text-white rounded border border-gray-600 leading-tight focus:outline-none focus:bg-gray-700 p-4" style="height: 50px;">
+                    @error('email')
+                        <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="mb-4">
+                    <input type="tel" name="phone" placeholder="Phone" class="w-full bg-gray-800 text-white rounded border border-gray-600 leading-tight focus:outline-none focus:bg-gray-700 p-4" style="height: 50px;">
+                    @error('phone')
+                        <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="mb-4">
+                    <textarea name="msg" placeholder="Your Message" rows="6" class="w-full bg-gray-800 text-white rounded border border-gray-600 leading-tight focus:outline-none focus:bg-gray-700 p-4"></textarea>
+                    @error('msg')
+                        <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="mb-4 text-right">
+                    <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" style="height: 50px;">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 @endsection
