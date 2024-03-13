@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710336788~exp=1710340388~hmac=42a1841d73606251c5efb0051293550b5dcb8095af7eda4a7ba2afa43098d08d&w=1800'); background-size: cover; background-position: center center;">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://images.pexels.com/photos/7991398/pexels-photo-7991398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center center;">
     <div class="w-full lg:w-1/2 mx-auto bg-black rounded-lg shadow-xl" style="opacity: 0.9;">
         <div class="p-4 md:p-8 text-center lg:text-left">
             <h1 class="text-3xl font-bold text-white">Contact Us</h1>

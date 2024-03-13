@@ -2,13 +2,11 @@
 
 @section('content')
 
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-vector/flat-design-old-film-background_23-2151002460.jpg?t=st=1710330443~exp=1710334043~hmac=e0612eccfa38758282de5e0876dba5300b38d599a2d6616cd38fe11e19925b96&w=1480');">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/cinema-elements-red-background-with-copy-space_23-2148457853.jpg?t=st=1710358463~exp=1710362063~hmac=1283b1c67387a75e7293fa1c551221ced250f6af296f8f7650ad5f9d26d5d814&w=1800');">
     
-     <div class="w-full lg:w-2/5 lg:order-1">
-        <img src="../../images/film.png" alt="Film" class="rounded-lg  hidden lg:block">
-    </div>
+    
 
-    <div class="w-full lg:w-2/4 lg:order-1 bg-black mx-6 lg:mx-0 p-4 md:p-12" style="opacity: 0.9;">
+    <div class="w-full lg:w-2/4 lg:ml-auto bg-black p-4 md:p-12" style="opacity: 0.9; margin-right: 2rem;"> 
         <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-white">Update Post</h1>
 
         @if ($errors->any())
