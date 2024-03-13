@@ -1,92 +1,64 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="sm:container sm:mx-auto sm:max-w-lg sm:mt-10">
-    <div class="flex">
-        <div class="w-full">
-            <section class="flex flex-col break-words bg-white sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
-
-                <header class="font-semibold bg-gray-200 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
-                    {{ __('Register') }}
-                </header>
-
-                <form class="w-full px-6 space-y-6 sm:px-10 sm:space-y-8" method="POST"
-                    action="{{ route('register') }}">
+<main class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://miro.medium.com/v2/resize:fit:1200/0*z9WXKtzmXIvVj6UK.'); background-size: cover; background-position: center center;">
+    <div class="flex flex-col md:flex-row h-4/6 items-center w-full max-w-4xl mx-auto bg-black bg-opacity-75 rounded-none p-6">
+        
+        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+            <div class="max-w-md w-full mx-auto">
+                <h2 class="text-3xl text-white font-bold mb-6 text-center">Register</h2>
+                
+                <form class="space-y-6" action="{{ route('register') }}" method="POST">
                     @csrf
 
-                    <div class="flex flex-wrap">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Name') }}:
-                        </label>
-
-                        <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror"
-                            name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
+                    <div>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="w-full p-3 text-white bg-gray-700 border @error('name') border-red-500 @else border-gray-600 @enderror rounded-md" value="{{ old('name') }}" required autofocus>
                         @error('name')
-                        <p class="text-red-500 text-xs italic mt-4">
-                            {{ $message }}
-                        </p>
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
                         @enderror
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('E-Mail Address') }}:
-                        </label>
-
-                        <input id="email" type="email"
-                            class="form-input w-full @error('email') border-red-500 @enderror" name="email"
-                            value="{{ old('email') }}" required autocomplete="email">
-
+                    <div>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="w-full p-3 text-white bg-gray-700 border @error('email') border-red-500 @else border-gray-600 @enderror rounded-md" value="{{ old('email') }}" required>
                         @error('email')
-                        <p class="text-red-500 text-xs italic mt-4">
-                            {{ $message }}
-                        </p>
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
                         @enderror
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <label for="password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Password') }}:
-                        </label>
-
-                        <input id="password" type="password"
-                            class="form-input w-full @error('password') border-red-500 @enderror" name="password"
-                            required autocomplete="new-password">
-
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" class="w-full p-3 text-white bg-gray-700 border @error('password') border-red-500 @else border-gray-600 @enderror rounded-md" required>
                         @error('password')
-                        <p class="text-red-500 text-xs italic mt-4">
-                            {{ $message }}
-                        </p>
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
                         @enderror
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <label for="password-confirm" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Confirm Password') }}:
-                        </label>
-
-                        <input id="password-confirm" type="password" class="form-input w-full"
-                            name="password_confirmation" required autocomplete="new-password">
+                    <div>
+                        <label for="password-confirm" class="sr-only">Confirm Password</label>
+                        <input type="password" name="password_confirmation" id="password-confirm" placeholder="Confirm your password" class="w-full p-3 text-white bg-gray-700 border border-gray-600 rounded-md" required>
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <button type="submit"
-                            class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-4">
-                            {{ __('Register') }}
-                        </button>
-
-                        <p class="w-full text-xs text-center text-gray-700 my-6 sm:text-sm sm:my-8">
-                            {{ __('Already have an account?') }}
-                            <a class="text-blue-500 hover:text-blue-700 no-underline hover:underline" href="{{ route('login') }}">
-                                {{ __('Login') }}
-                            </a>
-                        </p>
-                    </div>
+                    <button type="submit" class="w-full p-3 bg-red-500 text-white rounded-md hover:bg-red-600">Register</button>
                 </form>
 
-            </section>
+                <p class="mt-6 text-sm text-center text-white">
+                    Already have an account? <a href="{{ route('login') }}" class="text-white hover:text-red-600">Login</a>.
+                </p>
+            </div>
         </div>
+
+        <div class="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+            <img class="object-cover w-full h-64 md:h-auto" src="https://img.freepik.com/free-photo/one-person-typing-laptop-night-generated-by-ai_188544-27872.jpg?t=st=1710362616~exp=1710366216~hmac=b4579727b8471e3f479ec393cb959d18cdc5105cf62fac64c5c7e1459c01c8dd&w=1800" alt="Registration Side Image" style="margin-left: 30px">
+        </div>
+        
     </div>
 </main>
 @endsection

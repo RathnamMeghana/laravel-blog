@@ -2,8 +2,8 @@
 
 @section('content')
 
-
-<div class="w-4/5 m-auto text-center">
+<div style="background-color: rgb(124, 5, 5); min-height: 100vh;">
+<div class="w-4/5 m-auto text-center" >
     <div class="py-15">
         <h1 class="text-6xl text-white">
             Movie Blog Posts
@@ -21,7 +21,7 @@
 
 @if (Auth::check())
 <div class="w-4/5 mx-auto mb-10">
-    <a href="/blog/create" class="bg-red-500 hover:bg-red-700 uppercase text-white text-xs font-extrabold py-3 px-5 rounded-3xl">
+    <a href="/blog/create" class="bg-black hover:bg-red-700 uppercase text-white text-xs font-extrabold py-3 px-5 rounded-3xl">
         Create post
     </a>
 </div>
@@ -71,7 +71,9 @@
             @endif
         </div>
         </div>
-    </div>    
+    </div> 
+
 @endforeach
+</div>
 
 @endsection
