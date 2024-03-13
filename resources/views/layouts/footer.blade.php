@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 py-20 mt-20">
+<footer class="bg-black py-20 ">
     <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-gray-700">
         <div>
             <h3 class="text-l sm:font-bold text-gray-100">
@@ -14,6 +14,16 @@
                 <li class="pb-1">
                     <a href="/blog">
                         Blog
+                    </a>
+                </li>
+                <li class="pb-1">
+                    <a href="/about">
+                        About
+                    </a>
+                </li>
+                <li class="pb-1">
+                    <a href="/contact_us">
+                        Contact
                     </a>
                 </li>
                 <li class="pb-1">
@@ -51,7 +61,7 @@
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
+                    <a href="/contact_us">
                         Contact
                     </a>
                 </li>
@@ -65,23 +75,23 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
-                        Why we love tech
+                    <a href="/blog/1917-2019/">
+                        1917-2019
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Why we love design
+                    <a href="/blog/bridesmaids-2011">
+                        bridesmaids-2011
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Why to use Laravel
+                    <a href="/blog/arrival-2016">
+                        arrival-2016
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Why PHP is the best
+                    <a href="/blog/interstellar-2014">
+                        interstellar-2014
                     </a>
                 </li>
             </ul>
