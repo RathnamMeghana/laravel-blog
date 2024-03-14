@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/cinema-elements-red-background-with-copy-space_23-2148457853.jpg?t=st=1710358463~exp=1710362063~hmac=1283b1c67387a75e7293fa1c551221ced250f6af296f8f7650ad5f9d26d5d814&w=1800');">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/cinema-elements-red-background-with-copy-space_23-2148457853.jpg?t=st=1710416162~exp=1710419762~hmac=3bbe57dbf7d65df5e50d621451c88ddf46d7772b16a797498182f0902c46c376&w=1800');">
     
     
 

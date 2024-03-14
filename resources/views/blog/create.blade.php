@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710358328~exp=1710361928~hmac=843c006e13eb7a8a8a03c395af7bc2d13cc42d406526680b6a7d300f5a64ac9d&w=1800'); background-size: cover; background-position: center center;">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-photo/arrangement-cinema-elements-red-background-with-copy-space_23-2148457847.jpg?t=st=1710416091~exp=1710419691~hmac=f3a2183fe406668f12c1f9b4495ba87f8ff1f9857a4078f8ba599a5ff04b1c6b&w=1800'); background-size: cover; background-position: center center;">
 
     <div class="w-full lg:w-3/5 p-4 md:p-8 lg:order-1 order-2">
         <div class="bg-black rounded-lg p-4 md:p-8" style="opacity: 0.9;">
