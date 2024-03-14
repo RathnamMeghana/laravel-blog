@@ -8,7 +8,7 @@
     <div class="flex flex-col md:flex-row  h-4/6 items-center w-full max-w-4xl mx-auto bg-black bg-opacity-75 rounded-none p-6">
         
         <div class="w-full md:w-1/2">
-    <img class="object-cover w-full h-64 md:h-auto" src="https://img.freepik.com/free-photo/one-person-typing-laptop-night-generated-by-ai_188544-27872.jpg?t=st=1710362616~exp=1710366216~hmac=b4579727b8471e3f479ec393cb959d18cdc5105cf62fac64c5c7e1459c01c8dd&w=1800" alt="Login Image" >
+    <img class="object-cover w-full h-64 md:h-auto" src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Login Image" >
 </div>
 
         
