@@ -18,12 +18,17 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('blog.index')
-            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
-    }
+        if($request->search){
+            $posts = Post::where('title', 'like', '%' . $request->search . '%')
+                ->orWhere('info', 'like', '%' . $request->search . '%')->latest()->get();
+        } else{
+            $posts = Post::latest()->get();
+        }
+        return view('blog.index',compact('posts'));
 
+    }
     /**
      * Show the form for creating a new resource.
      *
