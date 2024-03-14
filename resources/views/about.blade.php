@@ -2,7 +2,7 @@
 
 @section('content')
  
-<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://img.freepik.com/free-vector/realistic-red-theatrical-closed-curtain-shiny-material-with-reflection-stage-floor-vector-illustration_1284-33550.jpg?t=st=1710360609~exp=1710364209~hmac=c2a171dc598d8b507a6bdfdf4ebf00fbcb7cc0e4d6abbace7c0a0eb840c2e84d&w=1060');">
+<div class="flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" style="background-image:url('https://images.pexels.com/photos/4722583/pexels-photo-4722583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
 
  
     <div id="profile"
