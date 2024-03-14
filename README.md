@@ -6,7 +6,7 @@
 
 ## Project Description
 
-CineThoughts is a online movie blog system specifically designed for users who are interested in movies and who love to share thoughts or reviews about them.This application will allow users to easily view, create, modify, and delete blog posts.The aim of this application is to explore the vast world of cinema together.Come on in and let's start talking movies!
+CineThoughts is an online movie blog system specifically designed for users who are interested in movies and who love to share their thoughts or reviews about them.This application will allow users to easily view, create, modify, and delete blog posts.The aim of this application is to explore the vast world of cinema together.Come on in and let's start talking movies!
 
 ## Author 
 • Meghana Rathnam Kuppala: [@RathnamMeghana](https://github.com/RathnamMeghana) [![Button 1](https://img.shields.io/badge/%22GitHub%22-green.svg)](https://github.com/RathnamMeghana)
@@ -14,14 +14,14 @@ CineThoughts is a online movie blog system specifically designed for users who a
 ## Features
 - **Account Registration/Login**: Secure access to CineThoughts movie blog.
 - **Home**: User friendly and attractive home page that keeps the users engaged.
-- **About**: Users can view the information and contact details of the blog owner in this page.
+- **About**: Users can view information and contact details of the blog owner in this page.
 - **Contact**: Users can easily send emails to the blog owner through this page.
 - **View Blog Posts**: Users can view a list of posts, as well as individual blog posts.
 - **Create Blog Posts**: Users can easily visit the create form and create a new blog post once logged in.
-- **Modify Blog Posts**: Users can easily visit the update form and update already existing blog post once logged in.
-- **Delete Blog Posts**: Users can easily delete already existing blog post once logged in.
+- **Modify Blog Posts**: Users can easily visit the update form and update an already existing blog post once logged in.
+- **Delete Blog Posts**: Users can easily delete an already existing blog post once logged in.
 - **Comments**: Allows users to share thoughts and reviews about individual blog posts.
-- **Search**: Allows users to easily search for a specific key word or a post.
+- **Search**: Allows users to easily search for a specific keyword or a post.
 - **Use Roles and Permissions**: Assign roles and permissions to users to control access to certain features and content.
 - **Image Uploads**: Allows users to upload images to use in their blog posts.
 
